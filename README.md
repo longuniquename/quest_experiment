@@ -4,7 +4,7 @@ Quest experiment
 {
   "states": {
     "s1": {
-      "title": "Initial state",
+      "title": "Selection state",
       "contents": "Choose your drink",
       "functions": [
         {
@@ -54,6 +54,23 @@ Quest experiment
           }
         }
       ]
+    },
+    "s2": {
+      "title": "Drinking state",
+      "contents": {
+        "fn": "concat",
+        "args": [
+          "Your drink is: ",
+          {
+            "fn": "switch",
+            "args": {
+              1: "tea",
+              2: "coffee",
+              3: "beer"
+            }
+          }
+        ]
+      }
     }
   },
   "variables": {
