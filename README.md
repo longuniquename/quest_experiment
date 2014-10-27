@@ -10,22 +10,34 @@ Quest experiment
         {
           "title": "Tea choice",
           "contents": "Tea",
-          "actions": {
-            "set": {
-              "v2": 1
+          "actions": [
+            {
+              "fn": "set",
+              "args": {
+                "v2": 1
+              }
             },
-            "go": "s2"
-          }
+            {
+              "fn": "go",
+              "args": "s2"
+            }
+          ]
         },
         {
           "title": "Coffee choice",
           "contents": "Coffee",
-          "actions": {
-            "set": {
-              "v2": 2
+          "actions": [
+            {
+              "fn": "set",
+              "args": {
+                "v2": 2
+              }
             },
-            "go": "s2"
-          }
+            {
+              "fn": "go",
+              "args": "s2"
+            }
+          ]
         },
         {
           "title": "Adult choice",
@@ -33,12 +45,18 @@ Quest experiment
           "if": {
             "equals": ["$v1", false]
           },
-          "actions": {
-            "set": {
-              "v1": true
+          "actions": [
+            {
+              "fn": "set",
+              "args": {
+                "v1": true
+              }
             },
-            "go": "s1"
-          }
+            {
+              "fn": "go",
+              "args": "s1"
+            }
+          ]
         },
         {
           "title": "Beer choice",
@@ -46,12 +64,18 @@ Quest experiment
           "if": {
             "equals": ["$v1", true]
           },
-          "actions": {
-            "set": {
-              "v2": 3
+          "actions": [
+            {
+              "fn": "set",
+              "args": {
+                "v2": 3
+              }
             },
-            "go": "s2"
-          }
+            {
+              "fn": "go",
+              "args": "s2"
+            }
+          ]
         }
       ]
     },
