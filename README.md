@@ -14,8 +14,21 @@ Quest experiment
         {
           "title": "Second choice",
           "contents": "Coffee"
+        },
+        {
+          "title": "Third choice",
+          "contents": "Beer",
+          "if": {
+            "equals": ["$v1", true]
+          }
         }
       ]
+    }
+  },
+  "variables": {
+    "v1": {
+      "title": "Is adult",
+      "default": false
     }
   }
 }
