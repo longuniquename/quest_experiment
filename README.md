@@ -64,9 +64,9 @@ Quest experiment
           {
             "fn": "switch",
             "args": {
-              1: "tea",
-              2: "coffee",
-              3: "beer"
+              "1": "tea",
+              "2": "coffee",
+              "3": "beer"
             }
           }
         ]
